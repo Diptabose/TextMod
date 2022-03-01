@@ -7,7 +7,7 @@ function Home(props){
 var light_dark= props.isDark?"dark":"light";
 let home = (
   <>
-<nav className={`navbar navbar-expand-lg navbar-${light_dark} bg-${light_dark}`} >
+<nav className={`navbar navbar-expand-lg navbar-${light_dark} bg-${light_dark} sticky-top`} >
   <div className="container d-flex justify-content-between">
   <div className="d-flex align-items-center">
   <img width="50px" height="50px" src={Logo} className="img-fluid" alt=""/>
@@ -22,6 +22,9 @@ let home = (
       <ul className="navbar-nav">
         <li className="nav-item">
           <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+        </li>
+        <li className="nav-item">
+        <Link className="nav-link active" to="/changelogs">Changelogs</Link>
         </li>
         <li className="nav-item">
           <Link className="nav-link active" to="/about">About</Link>

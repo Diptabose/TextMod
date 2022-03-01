@@ -3,6 +3,7 @@ import  Home from './pages/Home.js';
 import TextBox from './pages/TextBox.js';
 import About from './pages/About.js';
 import Alert from './pages/Alert.js';
+import Changelogs from './pages/Changelogs.js';
 import NoPage from './pages/NoPage.js';
 import {useState,useEffect} from 'react';
 import {
@@ -54,7 +55,7 @@ document.documentElement.setAttribute("theme",'dark');
   
   return (
     <>
-    <div theme={"dark"}>
+    <div className="heightSet" theme={"dark"}>
      <Router>
         <Home title="TextMod" darkModeState={darkModeToggler} isDark={isDark} />
         <Alert alert={alerT} />
@@ -62,6 +63,7 @@ document.documentElement.setAttribute("theme",'dark');
         <Route exact index element={<>
           <TextBox alertFunc={showAlert} /></>
         } />
+        <Route exact path="/changelogs" element={<Changelogs />} />
           <Route exact path="/about" element={<About />} />
           <Route path="*" element={<NoPage />} />
         </Routes>

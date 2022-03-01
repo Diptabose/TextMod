@@ -13,13 +13,18 @@ html[theme="dark"]{
 body{
   background-color:var(--body-background);
   transition: background-color 0.3s linear, color 0.3s linear;
-  height:100%;
-  width:100%;
 }
-p,h1,h2,h4,span,h3{
+p,h1,h2,h4,span,h3,ul,li,b{
   color:var(--text-color);
 }
 
 .heightTextArea{
   height:50px;
 }
+
+footer{
+  position:sticky;
+  top:100%;
+  bottom:0;
+}
+
