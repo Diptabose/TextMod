@@ -1,0 +1,25 @@
+html{
+  --body-background:white;
+  --text-color:black;
+  height:100%;
+  width:100%;
+}
+
+html[theme="dark"]{
+  --body-background:#333;
+  --text-color:white;
+}
+
+body{
+  background-color:var(--body-background);
+  transition: background-color 0.3s linear, color 0.3s linear;
+  height:100%;
+  width:100%;
+}
+p,h1,h2,h4,span,h3{
+  color:var(--text-color);
+}
+
+.heightTextArea{
+  height:50px;
+}

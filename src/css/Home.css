@@ -1,0 +1,15 @@
+/*.home{
+  display: flex;
+  align-items:center;
+  justify-content:space-evenly;
+  border:2px solid black;
+}
+.flex-start{
+background-color: yellow;
+margin:0;
+position:sticky;
+top:;
+}
+.flex-start li{
+  list-style:none;
+}*/
