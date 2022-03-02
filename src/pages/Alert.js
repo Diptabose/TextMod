@@ -14,7 +14,7 @@ function Alert(props)
  <div className="heightTextArea">
  <div className="container">
  <div className={`alert alert-${props.alert.type}`} role="alert">
-   <b>{Capital(props.alert.type)}:</b>{" "+props.alert.message}
+   <b className="text-dark">{Capital(props.alert.type)}:</b>{" "+props.alert.message}
  </div>
  </div>
   </div>
